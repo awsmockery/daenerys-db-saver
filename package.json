@@ -1,0 +1,26 @@
+{
+  "name": "daenerys-db-saver",
+  "version": "0.0.0",
+  "description": "",
+  "main": "db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/api.js",
+    "standard": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awsmockery/daenerys-db-saver.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awsmockery/daenerys-db-saver/issues"
+  },
+  "homepage": "https://github.com/awsmockery/daenerys-db-saver#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "pg": "^7.4.3",
+    "standard": "^12.0.1"
+  }
+}
