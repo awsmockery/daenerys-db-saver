@@ -13,6 +13,7 @@ const save = ({id, content}, callback) => {
     console.log(err)
     client.query(`insert into messages(id, content) values('${id}', '${content}')`, (err, res) => {
       console.log(err, res)
+      callback()
       client.end()
     })
   })

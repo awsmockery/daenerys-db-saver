@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 8080
+const port = 8003
 const bodyParser = require('body-parser')
 const db = require("./db")
 
@@ -14,4 +14,4 @@ app.post('/messages', (req, res) => {
 
 })
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`Daenerys listening on port ${port}!`))
