@@ -6,8 +6,10 @@ const db = require("./db")
 
 app.use(bodyParser.json())
 app.post('/messages', (req, res) => {
+  console.log('Entrou na rota', req.body)
   const {id, content} = req.body
   db.save({id, content}, () => {
+    console.log('Salvou no banco')
     res.send('Ok!')
     console.log('Respondeu!')
   })
